@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("./design-system.css");
+@import url("./reset.css");
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width);
+    height: 100vh;
+    background-color: var(--color-sidebar-bg);
+    color: var(--color-sidebar-text);
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    z-index: 100;
+}
+
+.sidebar__brand{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 1rem;
+}
+.sidebar__nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sidebar__link{
+    display: block;
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.sidebar__link:hover,
+.sidebar__link:focus{
+    background-color:var(--color-primary);
+    color: #ffffff;
+    transform: translateX(5px);
+}
