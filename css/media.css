@@ -32,3 +32,20 @@
         flex-direction: column;
     }
 }
+
+    @media (max-width: 500px) {
+        .card-grid{
+            flex-direction: column;
+        }
+
+        .section{
+            padding: 4rem 1.5rem;
+        }
+
+        .whatsapp-btn{
+            bottom: 2rem;
+            right: 1.5rem;
+            padding: 1rem 1.5rem;
+            font-size: 1.4rem;
+        }
+    }
